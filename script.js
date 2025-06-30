@@ -26,8 +26,11 @@ const gameBoard = (() => {
     init();
 
     return {
+        init,
         getBoard,
         newBoard,
         placePiece
-    }
+    };
 })();
+
+export default gameBoard;
