@@ -1,0 +1,178 @@
+* {
+    margin:0;
+}
+
+.header{
+    display: grid; 
+    color: #D1D8BE;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    background-color: #819A91;
+    /* height: 120px; */
+    /* height: 550px; */
+    padding: 15px;
+    box-shadow: 0 10px 5px #D1D8BE;
+    border-radius: 0 0 15px 15px;
+}
+
+.player, .tie-container {
+    text-align: center;
+    align-self: center;
+}
+
+.player .title, .tie-container .title {
+    font-size: x-large;
+    /* font-size: 70px; */
+    /* transform: scale(0); */
+
+    padding-bottom: 5px;
+}
+
+.player .score {
+    
+    font-size: 80px;
+}
+
+.tie-container .score {
+    font-size: 25vh;
+    line-height: 25vh;
+    padding-top: 5vh;
+}
+
+.player input {
+    font-size: large;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: #A7C1A8;
+    color: #819A91;
+    background-color: #EEEFE0; 
+    text-align: center;
+}
+
+.player input:focus {
+    outline-color: #819A91;
+} 
+
+.header h1 {
+    font-size: 75px;
+    padding-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+button {
+    height: 26px;
+    width: 100px;
+    border-radius: 15px;
+    border-color: #A7C1A8;
+    color: #819A91;
+    background-color: #EEEFE0;
+}
+
+.outer-container {
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.game-container {
+    align-content: center;
+    justify-items: center;
+}
+
+.game-board {
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: grid;
+    height: 350px;
+    width: 350px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    border: solid #819A91 5px;
+     
+}
+
+.tile {
+    color: #819A91;
+    font-size: 70px;
+    text-align: center;
+    align-content: center;
+    border: solid 5px #A7C1A8;
+    background-color: #D1D8BE;
+    
+}
+
+.hide {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+/* ------------------- Start Screen --------------------- */
+
+.outer-container.start-screen{
+    grid-template-rows: 7fr 1fr;
+}
+
+.header .start-screen {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.header .large-padding {
+    padding-bottom: 50%;
+}
+
+.player .symbol {
+    font-size: 50vh;
+}
+
+.game-container.start-screen{
+    height: 0;
+    transform: scale(0);
+}
+
+.game-board.start-screen{
+    transform: scale(0);
+}
+
+/* ------------------- Score Screen ---------------------------- */
+
+.button-container.score-screen {
+    padding-top: 80px;
+    justify-content: center;
+}
+
+.outer-container.score-screen{
+    grid-template-rows: 7fr 1fr;
+}
+
+.game-container.score-screen{
+    height: 0;
+    transform: scale(0);
+}
+
+.game-board.score-screen{
+    transform: scale(0);
+    height: 0;
+} 
+
+.score-screen .score {
+    padding-top: 0;
+    font-size: 45vh;
+    line-height: 45vh;
+}
+
+.score-screen .tie-container .score {
+    font-size: 30vh;
+    line-height: 30vh;
+}
