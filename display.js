@@ -1,5 +1,4 @@
 import game from "./game.js";
-// import gameBoard from "./script.js"
 
 const displayControl = (() => {
     let curGame;
