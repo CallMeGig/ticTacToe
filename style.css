@@ -8,8 +8,6 @@
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     background-color: #819A91;
-    /* height: 120px; */
-    /* height: 550px; */
     padding: 15px;
     box-shadow: 0 10px 5px #D1D8BE;
     border-radius: 0 0 15px 15px;
@@ -22,9 +20,6 @@
 
 .player .title, .tie-container .title {
     font-size: x-large;
-    /* font-size: 70px; */
-    /* transform: scale(0); */
-
     padding-bottom: 5px;
 }
 

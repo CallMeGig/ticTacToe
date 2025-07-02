@@ -79,7 +79,7 @@ const displayControl = (() => {
 
 
 
-    // Button clicked functions
+    // Button event functions
 
     function playNewGame() {
         curGame.restartGame();
@@ -232,7 +232,7 @@ const displayControl = (() => {
     function init() {
         bindEvents();
     }
-    // init();
+    
     return {
         init,
     }
